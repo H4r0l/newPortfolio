@@ -3,7 +3,7 @@ import { Box } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 function App() {
   return (
-    <Box bg="#2F4450" minHeight="100vh" padding={"1px 0"}>
+    <Box bg="#606060" minHeight="100vh" padding={"1px 0"}>
       <Box
         margin={"1rem"}
         borderRadius="xl"

@@ -31,7 +31,7 @@ const Navbar = () => {
           <Button
             as={Link}
             to="/"
-            bg="#578A76"
+            bg="#8b94a7"
             rounded="full"
             textColor={"white"}
             style={{
@@ -49,37 +49,6 @@ const Navbar = () => {
               height={"16px"}
               style={{ margin: 0 }}
             />
-          </Button>
-          <Button
-            as={Link}
-            to="/about"
-            bg="#578A76"
-            rounded="full"
-            style={{ borderRadius: "50%" }}
-            p={2}
-          >
-            <FaUser size={16} color="black" />
-          </Button>
-          <Button
-            as={Link}
-            to="/projects"
-            bg="#578A76"
-            rounded="full"
-            style={{ borderRadius: "50%" }}
-            p={2}
-            alignContent={"center"}
-          >
-            <FaProjectDiagram size={16} color="black" />
-          </Button>
-          <Button
-            as={Link}
-            to="/contact"
-            bg="#578A76"
-            rounded="full"
-            style={{ borderRadius: "50%" }}
-            p={2}
-          >
-            <FaAddressCard size={16} color="black" />
           </Button>
         </VStack>
       </Box>
