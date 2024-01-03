@@ -24,7 +24,7 @@ const Navbar = () => {
         <VStack
           p={4}
           h="100%"
-          justifyContent="space-between"
+          justifyContent="space-evenly"
           flexGrow={1}
           pb="65vh"
         >
@@ -50,6 +50,11 @@ const Navbar = () => {
               style={{ margin: 0 }}
             />
           </Button>
+	  <Button
+	   as={toggle}
+	   rounded="full"
+	  >
+	  </Button>
         </VStack>
       </Box>
     </motion.div>
