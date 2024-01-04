@@ -2,9 +2,16 @@ import { Box, Button, VStack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Negative from "../assets/Negative.png";
-import { FaUser, FaProjectDiagram, FaAddressCard } from "react-icons/fa";
+import { FaUser, FaProjectDiagram, FaAddressCard, FaSun } from "react-icons/fa";
+import { useColorMode } from "@chakra-ui/react";
+
 
 const Navbar = () => {
+
+  const { colorMode, toggleColorMode } = useColorMode();
+  
+
+
   return (
     <motion.div
       initial={{ x: "-100%" }}
@@ -13,7 +20,11 @@ const Navbar = () => {
       transition={{ duration: 0.7 }}
     >
       <Box
-        bgGradient="linear(to-b, #97E8C0, #D0EAC1)"
+        bgGradient={
+          colorMode === "light"
+            ? "linear(to-b, #97E8C0, #D0EAC1)"
+            : "linear(to-b, #254D35, #355C45)"
+        }
         h={"95vh"} // Adjusted height to 95% of the viewport height
         w={"7vh"}
         boxShadow="2px 0px 10px rgba(0, 0, 0, 0.5)"
@@ -50,11 +61,9 @@ const Navbar = () => {
               style={{ margin: 0 }}
             />
           </Button>
-	  <Button
-	   as={toggle}
-	   rounded="full"
-	  >
-	  </Button>
+          <Button onClick={toggleColorMode}>
+            <FaSun />
+          </Button>
         </VStack>
       </Box>
     </motion.div>
