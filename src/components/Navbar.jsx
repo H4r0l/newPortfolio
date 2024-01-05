@@ -61,7 +61,8 @@ const Navbar = () => {
               style={{ margin: 0 }}
             />
           </Button>
-          <Button onClick={toggleColorMode}>
+          <Button onClick={toggleColorMode}
+            bg="transparent">
             <FaSun />
           </Button>
         </VStack>

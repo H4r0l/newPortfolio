@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Card, CardBody, Text } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import { useColorMode } from "@chakra-ui/react";
 function App() {
@@ -19,6 +19,11 @@ function App() {
         minH={"95vh"}
         overflowY={"hidden"}
       >
+        <Card>
+          <CardBody>
+            <Text>Hello World</Text>
+          </CardBody>
+        </Card>
         {/* Content goes here */}
         <Navbar />
       </Box>
