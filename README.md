@@ -2,6 +2,8 @@
 
 Built with React and Chakra UI.
 
+| Here I'll show most of my work and outstanding projects ;) .
+
 ## Usage
 
 1. Clone repository.
