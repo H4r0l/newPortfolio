@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Card, CardBody, Text } from "@chakra-ui/react";
+import { Box, Card, CardBody, Flex, Grid, Heading, Text } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import { useColorMode } from "@chakra-ui/react";
 function App() {
@@ -19,13 +19,23 @@ function App() {
         minH={"95vh"}
         overflowY={"hidden"}
       >
-        <Card>
-          <CardBody>
-            <Text>Hello World</Text>
-          </CardBody>
-        </Card>
-        {/* Content goes here */}
-        <Navbar />
+        <Flex>
+          <Navbar />
+          {/**Create all the content inside Here, dont change the outside Layout*/}
+          <Box bg="inherit" padding="4rem 0">
+            <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+              <Heading as="h2" fontSize="xl" fontWeight="bold">
+                Meet (Your Name)
+              </Heading>
+              <Text>
+                (Short, impactful sentence describing your developer identity)
+              </Text>
+              <Text>
+                (Another sentence elaborating on your skills or passions)
+              </Text>
+            </Grid>
+          </Box>
+        </Flex>
       </Box>
     </Box>
   );
