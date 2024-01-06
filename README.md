@@ -17,7 +17,7 @@ This portfolio is currently under development for personal use and isn't intende
 
 * React: The core JavaScript library for building interactive user interfaces.
 * Chakra UI: A component-based React UI library for accessibility, consistency, and beautiful design.
-* (Other Framework/Library, if applicable): List any additional frameworks or libraries you're using (e.g., Tailwind CSS, Redux, etc.).
+* Some Upcoming Libraries...
 
 ## Project Objective
 
