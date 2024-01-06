@@ -11,4 +11,21 @@ Built with React and Chakra UI.
 
 ## Note
 
-This portfolio is for personal use and not intended for public deployment.
+This portfolio is currently under development for personal use and isn't intended for public deployment yet. It serves as a platform for me to hone my frontend skills and experiment with different technologies.
+
+## Technologies Used
+
+* React: The core JavaScript library for building interactive user interfaces.
+* Chakra UI: A component-based React UI library for accessibility, consistency, and beautiful design.
+* (Other Framework/Library, if applicable): List any additional frameworks or libraries you're using (e.g., Tailwind CSS, Redux, etc.).
+
+## Project Objective
+
+This portfolio aims to improve my frontend development skills in the following areas:
+
+* UI/UX Design: Enhancing my ability to craft user-friendly and visually appealing interfaces.
+* Component Building: Building reusable and maintainable React components.
+* State Management: Exploring different state management techniques to handle data effectively.
+* (Specific Skill/Technology, if applicable): Mention any specific areas you're focusing on beyond general frontend skills.
+
+By building this portfolio, I hope to gain a deeper understanding of modern frontend development practices and apply them to create a personal showcase of my capabilities.
