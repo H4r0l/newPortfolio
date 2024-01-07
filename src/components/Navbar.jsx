@@ -23,7 +23,7 @@ const Navbar = () => {
         bgGradient={
           colorMode === "light"
             ? "linear(to-b, #97E8C0, #D0EAC1)"
-            : "linear(to-b, #254D35, #355C45)"
+            : "linear(to-b, #250F65, #350C45)"
         }
         h={"95vh"} // Adjusted height to 95% of the viewport height
         w={"7vh"}
