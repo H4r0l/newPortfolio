@@ -2,7 +2,7 @@ import { Box, Button, VStack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Negative from "../assets/Negative.png";
-import { FaUser, FaProjectDiagram, FaAddressCard, FaSun } from "react-icons/fa";
+import { FaUser, FaProjectDiagram, FaAddressCard, FaSun, FaMoon } from "react-icons/fa";
 import { useColorMode } from "@chakra-ui/react";
 
 
@@ -42,9 +42,10 @@ const Navbar = () => {
           <Button
             as={Link}
             to="/"
-            bg="#8b94a7"
+            bg="transparent"
+            boxShadow="dark-lg"
             rounded="full"
-            textColor={"white"}
+            textColor="black"
             style={{
               display: "flex",
               justifyContent: "center",
@@ -63,7 +64,7 @@ const Navbar = () => {
           </Button>
           <Button onClick={toggleColorMode}
             bg="transparent">
-            <FaSun />
+            {colorMode === "light" ? <FaSun /> : <FaMoon />}
           </Button>
         </VStack>
       </Box>
