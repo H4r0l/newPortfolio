@@ -23,15 +23,12 @@ function App() {
           <Navbar />
           {/**Create all the content inside Here, dont change the outside Layout*/}
           <Box bg="inherit" padding="4rem 0">
-            <Grid templateColumns="repeat(3, 1fr)" gap={4}>
-              <Heading as="h2" fontSize="xl" fontWeight="bold">
+            <Grid templateRows="repeat(3, 1fr)" gap={4} padding={12}>
+              <Heading as="h2" fontSize="4xl" fontWeight="bold" fontFamily="Poppins">
                 Meet (Your Name)
               </Heading>
-              <Text>
+              <Text fontFamily="Alata">
                 (Short, impactful sentence describing your developer identity)
-              </Text>
-              <Text>
-                (Another sentence elaborating on your skills or passions)
               </Text>
             </Grid>
           </Box>
