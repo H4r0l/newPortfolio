@@ -14,7 +14,7 @@ function App() {
         bgGradient={
           colorMode === "light"
             ? "linear(to-b, #92CCF5, #49E1AB)"
-            : "linear(to-b, #245478, #0F3449)" // Darker shades for dark mode
+            : "linear(to-b, #245478, #9D3459)" // Darker shades for dark mode
         }
         minH={"95vh"}
         overflowY={"hidden"}
@@ -23,13 +23,20 @@ function App() {
           <Navbar />
           {/**Create all the content inside Here, dont change the outside Layout*/}
           <Box bg="inherit" padding="4rem 0">
-            <Grid templateRows="repeat(3, 1fr)" gap={4} padding={12}>
-              <Heading as="h2" fontSize="4xl" fontWeight="bold" fontFamily="Poppins">
-                Meet (Your Name)
+            <Grid templateRows="repeat(3, 1fr)" gap={4} padding={12} fontFamily="Alata">
+              <Heading
+                as="h2"
+                fontSize="5xl"
+                fontWeight="bold"
+                fontFamily="Victor Mono"
+              >
+                Meet Harol.
               </Heading>
-              <Text fontFamily="Alata">
-                (Short, impactful sentence describing your developer identity)
+              <br />
+              <Text >
+                I'm a Software Developer and this is my portfolio
               </Text>
+              Here I'm going to show all my Projects & Skills
             </Grid>
           </Box>
         </Flex>
