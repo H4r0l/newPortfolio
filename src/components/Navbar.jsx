@@ -17,7 +17,12 @@ const Navbar = () => {
       initial={{ x: "-100%" }}
       animate={{ x: "0%" }}
       exit={{ x: "-200%" }}
-      transition={{ duration: 0.7 }}
+      transition={{
+        duration: 3,
+        type: "spring",
+        damping: 10,
+      }}
+      
     >
       <Box
         bgGradient={
