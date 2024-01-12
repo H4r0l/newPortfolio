@@ -28,7 +28,8 @@ This portfolio aims to improve my frontend development skills in the following a
 
 * UI/UX Design: Enhancing my ability to craft user-friendly and visually appealing interfaces.
 * Component Building: Building reusable and maintainable React components.
-* State Management: Exploring different state management techniques to handle data effectively.
 * (Specific Skill/Technology, if applicable): Mention any specific areas you're focusing on beyond general frontend skills.
 
 By building this portfolio, I hope to gain a deeper understanding of modern frontend development practices and apply them to create a personal showcase of my capabilities.
+
+Some other features upcoming...
