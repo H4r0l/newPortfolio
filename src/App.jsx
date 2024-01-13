@@ -50,7 +50,7 @@ function App() {
               </motion.div>
               <br />
               <Text>I'm a Software Developer and this is my portfolio</Text>
-              Here I'm going to show all my Projects & Skills
+              Here I'm going to show all my Projects & Skills :)
             </Grid>
           </Box>
         </Flex>
