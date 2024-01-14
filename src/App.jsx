@@ -51,6 +51,9 @@ function App() {
               <br />
               <Text>I'm a Software Developer and this is my portfolio</Text>
               Here I'm going to show all my Projects & Skills :)
+              <Card>
+                Read more.
+              </Card>
             </Grid>
           </Box>
         </Flex>
