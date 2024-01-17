@@ -11,9 +11,9 @@ function App() {
   return (
     <Box bg="#606060" minHeight="100vh" padding={"1px 0"}>
       <motion.div
-        initial={{ x: -50 }}
+        initial={{ x: -20 }}
         animate={{ x: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.2 }}
         // Other Box props
       >
         <Box
@@ -46,19 +46,26 @@ function App() {
                     damping: 7,
                   }}
                 >
-                  <Heading
+                  <motion.Heading
+                    initial={{ opacity: 0, fontSize: "2xl" }}
+                    animate={{ opacity: 1, fontSize: "5xl" }}
                     as="h2"
                     fontSize="5xl"
                     fontWeight="bold"
                     fontFamily="Victor Mono"
                   >
                     Meet Harol.
-                  </Heading>
+                  </motion.Heading>
                 </motion.div>
                 <br />
-                <Text>I'm a Software Developer and this is my portfolio</Text>
-                Here I'm going to show all my Projects & Skills :)
-                <Card padding="1rem">Read more.</Card>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 3 }}>
+                  <Text>I'm a Software Developer and this is my portfolio</Text>
+                  Here I'm going to show all my Projects & Skills :)
+                  <Card padding="1rem" margin={4}>Read more.</Card>
+                </motion.div>
               </Grid>
             </Box>
           </Flex>
