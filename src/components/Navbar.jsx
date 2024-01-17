@@ -20,7 +20,7 @@ const Navbar = () => {
           bgGradient: colorMode === "light" ? "#D0EAC1" : "#740F65",
           opacity: 1,
         }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
+        transition={{ duration: 10, ease: "easeOut" }}
         variants={{ exit: { opacity: 0 } }}
         // Other Box props
       >
@@ -30,7 +30,7 @@ const Navbar = () => {
               ? "linear(to-b, #97E8C0, #D0EAC1)"
               : "linear(to-b, #990F71, #740F65)"
           }
-          h={"120%"} // Adjusted height to 95% of the viewport height
+          h={"110%"} // Adjusted height to 95% of the viewport height
           w={"7vh"}
           boxShadow="2px 0px 10px rgba(0, 0, 0, 0.5)"
           zIndex="10"
