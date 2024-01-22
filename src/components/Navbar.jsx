@@ -22,7 +22,6 @@ const Navbar = () => {
         }}
         transition={{ duration: 10, ease: "easeOut" }}
         variants={{ exit: { opacity: 0 } }}
-        // Other Box props
       >
         <Box
           bgGradient={
@@ -30,12 +29,12 @@ const Navbar = () => {
               ? "linear(to-b, #97E8C0, #D0EAC1)"
               : "linear(to-b, #990F71, #740F65)"
           }
-          h={"110%"} // Adjusted height to 95% of the viewport height
+          h={"110%"}
           w={"7vh"}
           boxShadow="2px 0px 10px rgba(0, 0, 0, 0.5)"
           zIndex="10"
           overflow="hidden"
-          flexDirection="column" // Arrange items vertically
+          flexDirection="column" 
         >
           <VStack
             p={4}
@@ -73,7 +72,6 @@ const Navbar = () => {
               transition={{ duration: 0.4, ease: "easeOut" }}
             variants={{ exit: { x: 20 } }}
             onClick={toggleColorMode}
-              // Other Button props
             >
               {colorMode === "light" ? <FaMoon /> : <FaSun />}
             </motion.button>

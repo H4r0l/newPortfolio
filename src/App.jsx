@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Card, CardBody, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import { Box, Card, Flex, Grid, Text } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import { useColorMode } from "@chakra-ui/react";
 import {motion } from "framer-motion"
