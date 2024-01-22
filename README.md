@@ -8,7 +8,7 @@ Built with React and Chakra UI.
 
 1. Clone repository.
 2. Install dependencies: `npm install`.
-3. Start server: `npm start`.
+3. Start server: `npm run dev`.
 4. Personalize content in `src` directory.
 
 ## Note
