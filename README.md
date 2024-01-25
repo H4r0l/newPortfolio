@@ -30,5 +30,10 @@ This portfolio aims to improve my frontend development skills in the following a
 * Component Building: Building reusable and maintainable React components.
 * (Specific Skill/Technology, if applicable): Mention any specific areas you're focusing on beyond general frontend skills.
 
+## ToDo List:
+
+* Generate a repo list for all important projects
+* Show my CV in a not-ugly kind of way
+* Update most of the Interactions with Framer motion ;)
 
 Some features and integrations upcoming...
