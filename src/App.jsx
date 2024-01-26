@@ -57,15 +57,14 @@ function App() {
                     Meet Harol.
                   </motion.Heading>
                 </motion.div>
-                <br />
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 3 }}>
                   <Text>I'm a Software Developer and this is my portfolio</Text>
                   Here I'm going to show all my Projects & Skills :)
-                  <Card padding="1rem" margin={4}>My main stack is ASP.NET</Card>
-                  <Card padding="1rem" margin={4}>I have around 1 Year experience</Card>
+                  <Card padding="0rem" margin={4}>My main stack is ASP.NET</Card>
+                  <Card padding="0rem" margin={4}>I have around 1 Year experience</Card>
                 </motion.div>
               </Grid>
             </Box>
