@@ -7,7 +7,7 @@ function App() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box bg="#606060" minHeight="100vh" padding="1px 0">
+    <Box bg="#606060" minHeight="100vh" padding="1px">
       <motion.div
         initial={{ x: -20 }}
         animate={{ x: 0 }}
@@ -71,14 +71,23 @@ function App() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 3 }}
               >
-                <Text>I'm a Software Developer and this is my portfolio</Text>
+                <Text padding="5px 0">
+                  I'm a Software Developer and this is my portfolio
+                </Text>
                 Here I'm going to show all my Projects & Skills :)
-                <Card padding="1rem" margin={4}>
-                  My main stack is ASP.NET
-                </Card>
-                <Card padding="1rem" margin={4}>
-                  I have around 1 Year experience
-                </Card>
+                <Grid
+                  templateColumns="repeat(3, 1fr)">
+                  <Card padding="1rem" margin={2} width="24rem">
+                    My main stack is ASP.NET
+                  </Card>
+                  <Card padding="1rem" margin={2} width="24rem">
+                    I have around 1 Year experience
+                  </Card>
+                  
+                  <Card padding="1rem" margin={2} width="24rem">
+                    I have around 1 Year experience
+                  </Card>
+                </Grid>
               </motion.div>
             </Grid>
           </Box>
