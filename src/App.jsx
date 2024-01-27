@@ -1,15 +1,13 @@
 import React from "react";
-import { Box, Card, Flex, Grid, Text } from "@chakra-ui/react";
+import { Box, Card, Flex, Grid, Text, useColorMode, Heading } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
-import { useColorMode } from "@chakra-ui/react";
-import {motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 function App() {
-
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box bg="#606060" minHeight="100vh" padding={"1px 0"}>
+    <Box bg="#606060" minHeight="100vh" padding="1px 0">
       <motion.div
         initial={{ x: -20 }}
         animate={{ x: 0 }}
@@ -24,51 +22,66 @@ function App() {
               ? "linear(to-b, #92CCF5, #49E1AB)"
               : "linear(to-b, #245478, #9D3459)" // Darker shades for dark mode
           }
-          minH={"95vh"}
-          overflowY={"hidden"}
+          minH="100vh" // Adjust to ensure full viewport height
+          display="flex" // Enable flexbox for content arrangement
+          flexDirection="row" // Arrange content vertically
+          overflowY="hidden"
         >
-          <Flex>
+          <Flex position="sticky" top={0} zIndex={10}>
+            {/* Keep Navbar sticky */}
             <Navbar />
-            {/**Create all the content inside Here, dont change the outside Layout*/}
-            <Box bg="inherit" padding="4rem 0">
-              <Grid
-                templateRows="repeat(3, 1fr)"
-                gap={4}
-                padding={8}
-                fontFamily="Alata"
-              >
-                <motion.div
-                  initial={{ opacity: 0, fontSize: "1.5rem", y: 100 }}
-                  animate={{ opacity: 1, fontSize: "5rem", y: 0 }}
-                  transition={{
-                    duration: 3,
-                    type: "spring",
-                    damping: 7,
-                  }}
-                >
-                  <motion.Heading
-                    initial={{ opacity: 0, fontSize: "2xl" }}
-                    animate={{ opacity: 1, fontSize: "5xl" }}
-                    as="h2"
-                    fontSize="5xl"
-                    fontWeight="bold"
-                    fontFamily="Victor Mono"
-                  >
-                    Meet Harol.
-                  </motion.Heading>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 3 }}>
-                  <Text>I'm a Software Developer and this is my portfolio</Text>
-                  Here I'm going to show all my Projects & Skills :)
-                  <Card padding="0rem" margin={4}>My main stack is ASP.NET</Card>
-                  <Card padding="0rem" margin={4}>I have around 1 Year experience</Card>
-                </motion.div>
-              </Grid>
-            </Box>
           </Flex>
+          <Box
+            flex="1" // Allow content to expand within available space
+            bg="inherit"
+            padding="4rem 0"
+            // Add margin for rounded box effect
+            margin="1rem"
+            borderRadius="xl" // Match outer container's border radius
+          >
+            <Grid
+              templateRows="repeat(3, 1fr)"
+              gap={4}
+              padding={8}
+              fontFamily="Alata"
+            >
+              {/* Content remains the same */}
+              <motion.div
+                initial={{ opacity: 0, fontSize: "1.5rem", y: 100 }}
+                animate={{ opacity: 1, fontSize: "5rem", y: 0 }}
+                transition={{
+                  duration: 3,
+                  type: "spring",
+                  damping: 7,
+                }}
+              >
+                <motion.Heading
+                  initial={{ opacity: 0, fontSize: "2xl" }}
+                  animate={{ opacity: 1, fontSize: "5xl" }}
+                  as="h2"
+                  fontSize="5xl"
+                  fontWeight="bold"
+                  fontFamily="Victor Mono"
+                >
+                  Meet Harol.
+                </motion.Heading>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 3 }}
+              >
+                <Text>I'm a Software Developer and this is my portfolio</Text>
+                Here I'm going to show all my Projects & Skills :)
+                <Card padding="1rem" margin={4}>
+                  My main stack is ASP.NET
+                </Card>
+                <Card padding="1rem" margin={4}>
+                  I have around 1 Year experience
+                </Card>
+              </motion.div>
+            </Grid>
+          </Box>
         </Box>
       </motion.div>
     </Box>
