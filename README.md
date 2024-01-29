@@ -30,9 +30,3 @@ This portfolio aims to improve my frontend development skills in the following a
 * Component Building: Building reusable and maintainable React components.
 * (Specific Skill/Technology, if applicable): Mention any specific areas you're focusing on beyond general frontend skills.
 
-## Next Steps	
-
-* Add more features
-* Add more integrations
-
-Some features and integrations upcoming...
