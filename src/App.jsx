@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, Card, Flex, Grid, Text, useColorMode, Heading } from "@chakra-ui/react";
+import {
+  Box,
+  Card,
+  Flex,
+  Grid,
+  Text,
+  useColorMode,
+  Heading,
+} from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import { motion } from "framer-motion";
 
@@ -22,7 +30,7 @@ function App() {
               ? "linear(to-b, #92CCF5, #49E1AB)"
               : "linear(to-b, #245478, #9D3459)" // Darker shades for dark mode
           }
-          minH="100vh" // Adjust to ensure full viewport height
+          minH="80vh" // Adjust to ensure full viewport height
           display="flex" // Enable flexbox for content arrangement
           flexDirection="row" // Arrange content vertically
           overflowY="hidden"
@@ -75,15 +83,14 @@ function App() {
                   I'm a Software Developer and this is my portfolio
                 </Text>
                 Here I'm going to show all my Projects & Skills :)
-                <Grid
-                  templateColumns="repeat(3, 1fr)">
+                <Grid templateColumns="repeat(3, 1fr)">
                   <Card padding="1rem" margin={2} width="24rem">
                     My main stack is ASP.NET
                   </Card>
                   <Card padding="1rem" margin={2} width="24rem">
                     I have around 1 Year experience
                   </Card>
-                  
+
                   <Card padding="1rem" margin={2} width="24rem">
                     I have around 1 Year experience
                   </Card>
