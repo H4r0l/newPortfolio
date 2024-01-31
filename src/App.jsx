@@ -7,6 +7,8 @@ import {
   Text,
   useColorMode,
   Heading,
+  CardHeader,
+  CardBody
 } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import { motion } from "framer-motion";
@@ -83,16 +85,14 @@ function App() {
                   I'm a Software Developer and this is my portfolio
                 </Text>
                 Here I'm going to show all my Projects & Skills :)
-                <Grid templateColumns="repeat(3, 1fr)">
+                <Grid display={{md: "flex"}} templateColumns="repeat(3, 1fr)">
                   <Card padding="1rem" margin={2} width="24rem">
-                    My main stack is ASP.NET
+                    <CardHeader>What is my Dev Stack?</CardHeader>
+                    <CardBody>My main stack is ASP.NET</CardBody>
                   </Card>
                   <Card padding="1rem" margin={2} width="24rem">
-                    I have around 1 Year experience
-                  </Card>
-
-                  <Card padding="1rem" margin={2} width="24rem">
-                    I have around 1 Year experience
+                    <CardHeader>Experience? :/</CardHeader>
+                    <CardBody>I have around 1 Year experience</CardBody>
                   </Card>
                 </Grid>
               </motion.div>
