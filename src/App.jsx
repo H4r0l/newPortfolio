@@ -96,6 +96,7 @@ function App() {
                   </Card>
                 </Grid>
 	       <Text>I have been programming for almost 4 years now and I would like to keep working on my skills and learn new languages and new Skills</Text>
+		<Card>I would like to learn Rust & Golang :)</Card> 
               </motion.div>
             </Grid>
           </Box>
