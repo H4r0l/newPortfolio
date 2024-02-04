@@ -95,6 +95,7 @@ function App() {
                     <CardBody>I have around 1 Year experience</CardBody>
                   </Card>
                 </Grid>
+	       <Text>I have been programming for almost 4 years now and I would like to keep working on my skills and learn new languages and new Skills</Text>
               </motion.div>
             </Grid>
           </Box>
