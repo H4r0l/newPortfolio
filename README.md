@@ -10,6 +10,7 @@ Built with React and Chakra UI.
 2. Install dependencies: `npm install`.
 3. Start server: `npm run dev`.
 4. Personalize content in `src` directory.
+5. Don't create a pages folder as this is a single-page application.
 
 ## Note
 
