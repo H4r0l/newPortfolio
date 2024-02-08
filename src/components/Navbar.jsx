@@ -25,7 +25,8 @@ const Navbar = () => {
             : "linear(to-b, #990F71, #740F65)"
         }
         h={"100%"}
-        w={"8vh"}
+        w={"70%"}
+        maxW={"70%"}
         boxShadow="2px 0px 10px rgba(0, 0, 0, 0.5)"
         zIndex="10"
         overflow="hidden"
