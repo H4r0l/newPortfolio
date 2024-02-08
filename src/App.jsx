@@ -8,7 +8,7 @@ import {
   useColorMode,
   Heading,
   CardHeader,
-  CardBody
+  CardBody,
 } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import { motion } from "framer-motion";
@@ -17,7 +17,7 @@ function App() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box bg="#606060" minHeight="100vh" padding="1px">
+    <Box bg="#606060" minHeight="100vh" padding="1px" flexDirection="column">
       <motion.div
         initial={{ x: -20 }}
         animate={{ x: 0 }}
@@ -32,7 +32,7 @@ function App() {
               ? "linear(to-b, #92CCF5, #49E1AB)"
               : "linear(to-b, #245478, #9D3459)" // Darker shades for dark mode
           }
-          minH="80vh" // Adjust to ensure full viewport height
+          minH="95vh" // Adjust to ensure full viewport height
           display="flex" // Enable flexbox for content arrangement
           flexDirection="row" // Arrange content vertically
           overflowY="hidden"
@@ -49,12 +49,7 @@ function App() {
             margin="1rem"
             borderRadius="xl" // Match outer container's border radius
           >
-            <Grid
-              templateRows="repeat(3, 1fr)"
-              gap={4}
-              padding={8}
-              fontFamily="Alata"
-            >
+            <Flex flexDirection={"column"} padding={8} fontFamily="Alata">
               {/* Content remains the same */}
               <motion.div
                 initial={{ opacity: 0, fontSize: "1.5rem", y: 100 }}
@@ -86,19 +81,23 @@ function App() {
                 </Text>
                 Here I'm going to show all my Projects & Skills :)
                 <Grid templateColumns="repeat(3, 1fr)">
-                  <Card padding="1rem" margin={2} width="24rem">
+                  <Card padding="1px" margin={"5px"} width="16rem">
                     <CardHeader>What is my Dev Stack?</CardHeader>
                     <CardBody>My main stack is ASP.NET</CardBody>
                   </Card>
-                  <Card padding="1rem" margin={2} width="24rem">
+                  <Card padding="1px" margin={"5px"} width="16rem">
                     <CardHeader>Experience? :/</CardHeader>
                     <CardBody>I have around 1 Year experience</CardBody>
                   </Card>
                 </Grid>
-	            <Text>I have been programming for almost 4 years now and I would like to keep working on my habilities and learn new languages and new <Card>Skills</Card></Text>
-		          <Card>I would like to learn Rust & Golang :)</Card> 
+                <Text>
+                  I have been programming for almost 4 years now and I would
+                  like to keep working on my habilities and learn new languages
+                  and new Skills
+                </Text>
+                I would like to learn Rust & Golang :)
               </motion.div>
-            </Grid>
+            </Flex>
           </Box>
         </Box>
       </motion.div>
