@@ -100,12 +100,7 @@ function App() {
             </Flex>
           </Box>
           <Box>
-            <Header>
-              Most representative Projects:
-              {
-                "Dummy Data"
-              }
-            </Header>
+
           </Box>
         </Box>
       </motion.div>
