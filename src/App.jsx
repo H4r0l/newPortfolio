@@ -6,12 +6,12 @@ import {
   Grid,
   Text,
   useColorMode,
-  Heading,
   CardHeader,
   CardBody,
 } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import { motion } from "framer-motion";
+import fetchData from "./components/fetchRepos";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -60,16 +60,13 @@ function App() {
                   damping: 7,
                 }}
               >
-                <motion.Heading
-                  initial={{ opacity: 0, fontSize: "2xl" }}
-                  animate={{ opacity: 1, fontSize: "5xl" }}
-                  as="h2"
+                <Text
                   fontSize="5xl"
                   fontWeight="bold"
                   fontFamily="Victor Mono"
                 >
                   Meet Harol.
-                </motion.Heading>
+                </Text>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -100,7 +97,7 @@ function App() {
             </Flex>
           </Box>
           <Box>
-
+                  {console.log(fetchData())}
           </Box>
         </Box>
       </motion.div>
