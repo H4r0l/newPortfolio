@@ -87,12 +87,6 @@ function App() {
                     <CardBody>I have around 1 Year experience</CardBody>
                   </Card>
                 </Grid>
-                <Text>
-                  I have been programming for almost 4 years now and I would
-                  like to keep working on my habilities and learn new languages
-                  and new Skills
-                </Text>
-                I would like to learn Golang and the C language :)
               </motion.div>
             </Flex>
           </Box>
