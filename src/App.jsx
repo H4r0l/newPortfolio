@@ -16,6 +16,8 @@ import fetchData from "./components/fetchRepos";
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
 
+
+
   return (
     <Box bg="#606060" minHeight="100vh" padding="1px" flexDirection="column">
       <motion.div
@@ -79,12 +81,8 @@ function App() {
                 Here I'm going to show all my Projects & Skills :)
                 <Grid templateColumns="repeat(3, 1fr)">
                   <Card padding="1px" margin={"5px"} width="16rem">
-                    <CardHeader>What is my Dev Stack?</CardHeader>
-                    <CardBody>My main stack is ASP.NET</CardBody>
                   </Card>
                   <Card padding="1px" margin={"5px"} width="16rem">
-                    <CardHeader>Experience? </CardHeader>
-                    <CardBody>I have around 1 Year experience</CardBody>
                   </Card>
                 </Grid>
               </motion.div>
